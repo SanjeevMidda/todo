@@ -7,7 +7,13 @@ function App() {
     <div className="App">
       <div className="todoListItems">
         {data.map((item) => {
-          return <Task taskName={item.taskName} checked={item.checked} />;
+          return (
+            <Task
+              taskName={item.taskName}
+              checked={item.checked}
+              key={item.id}
+            />
+          );
         })}
       </div>
     </div>
