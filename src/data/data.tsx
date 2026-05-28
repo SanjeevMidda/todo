@@ -1,4 +1,10 @@
-export const data = [
+interface todoData {
+  id: number;
+  taskName: string;
+  checked: boolean;
+}
+
+export const data: todoData[] = [
   {
     id: 0,
     taskName: "task one",
